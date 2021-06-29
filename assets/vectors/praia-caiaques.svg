@@ -192,7 +192,65 @@
       }
     </style>
     <style>
-      
+
+      #caiaque-1, #caiaque-2 {
+        animation: movimento-caiaques-1e2 2.5s ease-in-out infinite alternate;
+      }
+      #caiaque-3, #caiaque-4 {
+        animation: movimento-caiaques-3e4 2.5s ease-in-out infinite alternate;
+      }
+      #caiaque-5 {
+        animation: movimento-caiaque-5 2.5s ease-in-out infinite alternate;
+      }
+
+      #nuvem-1, #nuvem-2 {
+        animation: movimento-nuvem-esq 60s ease-in-out infinite alternate;
+      }
+
+      #nuvem-3, #nuvem-4 {
+        animation: movimento-nuvem-dir 60s ease-in-out infinite alternate;
+      }
+
+      #praia {
+        animation: inicia-pagina 2.5s ease-in-out forwards 1;
+      }
+
+      @keyframes movimento-caiaques-1e2 {
+        to {
+          transform: translate(4px, -6px)
+        }
+      }
+
+      @keyframes movimento-caiaques-3e4 {
+        to {
+          transform: translate(-6px, 2px)
+        }
+      }
+
+      @keyframes movimento-caiaque-5 {
+        to {
+          transform: translate(3px, -8px)
+        }
+      }
+
+      @keyframes movimento-nuvem-esq {
+        to {
+          transform: translate(-400px)
+        }
+      }
+
+      @keyframes movimento-nuvem-dir {
+        to {
+          transform: translate(400px)
+        }
+      }
+
+      @keyframes inicia-pagina {
+        from {
+          transform: translate(0, -2000px)
+        }
+      }
+
     </style>
     <linearGradient id="linear-gradient" x1="700" y1="588.28" x2="700" y2="375.14" gradientTransform="translate(0 384.72)" gradientUnits="userSpaceOnUse">
       <stop offset="0.19" stop-color="#ffead4"/>
